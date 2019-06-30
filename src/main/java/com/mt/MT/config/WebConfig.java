@@ -2,6 +2,7 @@ package com.mt.MT.config;
 
 import com.mt.MT.bean.Bird;
 import com.mt.MT.bean.Fish;
+import com.mt.MT.bean.MyBeanPostProcessor;
 import com.mt.MT.bean.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +31,11 @@ public class WebConfig {
     @Bean
     public Fish Fish(){
         return  new Fish() ;
+    }
+
+    @Bean
+    public MyBeanPostProcessor MyBeanPostProcessor(){
+        return new MyBeanPostProcessor() ;
     }
 
 }
