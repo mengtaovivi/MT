@@ -10,4 +10,6 @@ public class MtApplication {
 		SpringApplication.run(MtApplication.class, args);
 	}
 
+
+
 }
